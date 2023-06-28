@@ -14,13 +14,16 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+
+
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="#!">ie lab @ NYUAD</a>
-                <a class="btn btn-primary" href="#signup">Contact Us</a>
+                <!-- <a class="btn btn-primary" href="#signup">Register</a> -->
             </div>
         </nav>
         <!-- Masthead-->
@@ -30,15 +33,185 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <img src="ielablogo.png" style="width: 18em;">
-                            <br>
-                            <h1 class="mb-5" style="color: rgb(255, 255, 255);"><br>catalyzing impactful entreprenuership</h1>
-   
+                            <img src="logo.png" style="width:12em;">
+                            <h1 class="mb-5" style="color: rgb(255, 255, 255);">catalyzing impactful entreprenuership</h1>
+
+                            <!-- sign up button <a class="btn btn-primary btn-xl" href="#signup"></a> -->
+                            <h3 class="mb-4">Be the first to hear from us!</h3>
+                            <form name="submit-to-google-sheet">
+                                <input name="email" type="email" placeholder="Email" required>
+                                <button type="submit">Send</button>
+                              </form>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <script>
+            const scriptURL = 'SCRIPT_URL_PLACEHOLDER'
+            const form = document.forms['submit-to-google-sheet']
+            
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+        
+
+
+<!-- add a chunk a -->
+  <!-- Icons Grid-->
+  <!-- our services  -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-pen m-auto text-primary"></i></div>
+                    <h3>Capstone Support</h3>
+                    <p class="lead mb-0">We assist students during their Capstone projects, helping them develop their impactul ideas.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-lightbulb m-auto text-primary"></i></div>
+                    <h3>Startup Consultation</h3>
+                    <p class="lead mb-0">We will soon offer consultations for startup founders, providing guidance for new ventures.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex"><i class="bi-calendar-event m-auto text-primary"></i></div>
+                    <h3>Events</h3>
+                    <p class="lead mb-0">We will host impact and entreprenuership centered events and seminars throughout the semester. Stay tuned!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('uae.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Context</h2>
+                <p class="lead mb-0">In 2022, the UAE has ranked 1st in the Global Entrepreneurship Monitor for the first time,
+                    emerging as the number one global destination for establishing and starting businesses.
+                    Simultaneously, students at NYUAD are interested in and actively exploring entrepreneurship
+                    as a career option, and doing so during their studies.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('nyuad.jpg')"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>About Us</h2>
+                <p class="lead mb-0">At ie lab, we aim to bridge the gap between these entrepreneurial aspirations and the resources needed to realize them.
+
+                    Our unique focus is on Impact Entrepreneurship. We emphasize the development of ethical and transparent companies that aim to have a significant, positive impact on society and/or the environment.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('waterripple.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Our Vision</h2>
+                <p class="lead mb-0">We aim to become a strategic project for the university and a key player in the MENA region's entrepreneurship ecosystem. With your support, we can further expand our offerings to include services like pitch deck reviewing, pitch trainings, and consistent sessions on how to build a start-up.
+
+                    Join us in our endeavor to empower the next generation of ethical and impactful entrepreneurs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Testimonials-->
+<section class="testimonials text-center bg-light">
+    <div class="container">
+        <h2 class="mb-5">What people are saying...</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
+                    <h5>Margaret E.</h5>
+                    <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
+                    <h5>Fred S.</h5>
+                    <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
+                    <h5>Sarah W.</h5>
+                    <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to Action-->
+<section class="call-to-action text-white text-center" id="signup">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                <!-- Signup form-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                    <!-- Email address input-->
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
+                            <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
+                        </div>
+                        <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Footer-->
         <footer class="footer bg-light">
             <div class="container">
@@ -53,7 +226,7 @@
                             <li class="list-inline-item">⋅</li>
                             <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Business, Organizations and Society at NYUAD. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
