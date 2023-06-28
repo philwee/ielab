@@ -163,7 +163,7 @@
                 <h2 class="mb-4">Don't miss out - sign up for our mailing list now!</h2>
                 <form name="submit-to-google-sheet1">
                     <input name="email" type="email" placeholder="Email" required>
-                    <button type="submit">Send</button>
+                    <button type="submit1">Send</button>
                   </form>
             </div>
         </div>
@@ -177,7 +177,7 @@
     const scriptURL1 = scr11 + scr21
     const form1 = document.forms['submit-to-google-sheet1']
     
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit1', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => console.log('Success!', response))
