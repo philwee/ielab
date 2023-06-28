@@ -161,17 +161,29 @@
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <h2 class="mb-4">Don't miss out - sign up for our mailing list now!</h2>
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet1">
                     <input name="email" type="email" placeholder="Email" required>
                     <button type="submit">Send</button>
                   </form>
-              
             </div>
         </div>
     </div>
 </section>
 
 
+<script>
+    const scr11 = 'https://script.google.com/macros/s/AKfycbzOUOepm7GEwW9AYmf6M'
+    const scr21 = '-xMWgFd3jUo3ACyRS7VHknWJGMQPbEJt2BGj6pzz1Jrddv-/exec'
+    const scriptURL1 = scr11 + scr21
+    const form1 = document.forms['submit-to-google-sheet1']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 
 
 
@@ -220,10 +232,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
     </body>
 </html>
