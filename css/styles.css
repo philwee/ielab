@@ -10892,6 +10892,24 @@ header.masthead h1, header.masthead .h1 {
   padding-bottom: 1rem;
 }
 
+.testimonials2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* background-color: grey;  */
+}
+
+.image-container {
+  background-color: white; 
+  opacity: 0.7;
+  display: flex; 
+  justify-content: center !important; 
+}
+.image-container img {
+  /* max-width: 100%;  */
+  height: auto; 
+}
+
+
 .testimonials .testimonial-item {
   max-width: 18rem;
 }
