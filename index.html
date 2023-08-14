@@ -15,29 +15,59 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-
+        <style>
+            /* Style the FAQ section */
+            .faq-question {
+                font-weight: bold;
+                cursor: pointer;
+                padding: 10px;
+                border: 1px solid #ccc;
+                margin-bottom: 5px;
+            }
+    
+            .faq-answer {
+                display: none;  /* Initially hide all answers */
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-top: none; /* To avoid double border */
+                margin-bottom: 5px;
+            }
+        </style>
 
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">ie lab @ NYUAD</a>
-                <!-- <a class="btn btn-primary" href="#signup">Register</a> -->
+                <a class="navbar-brand" href="#!"><img src="latestlogo.png" style="height: 3em; width: 3em;"></a>
+                <!-- right side flexbox -->
+
+<!-- 
+                <a class="nav-link" href="#aboutus">About</a> <br>
+                <a class="nav-link" href="#whatwedo">What we do</a> <br>
+                <a class="nav-link" href="#support">Support Offered</a> <br> -->
+
             </div>
         </nav>
+        <div class="comingup" style="background-color: rgb(255, 255, 255); color: #57068c; text-align: center;">
+         <a href="#cc2023">   <h3>COMING UP: Campus Challenge 2023</h3> </a>
+        </div>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <div class="image-container"><img src="latestlogo.png" style="width:12em;"></div>
-                            <h1 class="mb-5" style="color: rgb(255, 255, 255);">catalyzing impactful entreprenuership</h1>
+                            <!-- coming up top banner -->
+
+
+                            <!-- Page heading--><img src="latestlogo.png" style="height: 15em; width: 15em;">
+                            <!-- <div class="image-container"><img src="latestlogo.png" style="width:12em;"></div> -->
+                            <h1 class="mb-5" style="color: rgb(255, 255, 255); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Sparking Impactful Entrepreneurship</h1>
+
 
                             <!-- sign up button <a class="btn btn-primary btn-xl" href="#signup"></a> -->
-                            <h3 class="mb-4">Be the first to hear from us!</h3>
+                            <h3 class="mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Be the first to hear from us!</h3>
                             <form name="submit-to-google-sheet">
                                 <input name="email" type="email" placeholder="Email" required>
                                 <button type="submit">Send</button>
@@ -63,70 +93,15 @@
         
 
 
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">COMING UP: Campus Challenge 2023</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." /> -->
-                            <h3>What</h3>
-                            <p class="font-weight-light mb-0">A bootcamp brought to you
-                                by the ielab, where you
-                                learn to tackle problems
-                                and solve them through
-                                entrepreneurship
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." /> -->
-                            <h3>Why</h3>
-                            <p class="font-weight-light mb-0">Entrepreneurship is one of
-                                the greatest ways to drive
-                                change in the world and in
-                                our community
-                                </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." /> -->
-                            <h3>When</h3>
-                            <p class="font-weight-light mb-0">September 22nd, 2023
-                                (Sign ups out on
-                                September 8th, 2023)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
 
 
 
-
-
-
-
-
-
-        <section class="testimonials2 text-center">
-            <div class="container">
-                <h2 class="h2">What we do</h2>
-            </div>
-        </section>   
-
-
-
-
-  <!-- Icons Grid-->
-  <!-- our services  -->
    
   <section class="features-icons bg-light text-center">
-    <div class="container">
+    <div class="container" id="whatwedo">
+        <h2 class="mb-5">What we do</h2>
         <div class="row">
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
@@ -154,7 +129,16 @@
 </section>
 <!-- Image Showcases-->
 <section class="showcase">
-    <div class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('waterripple.jpg')"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Our Vision</h2>
+            <p class="lead mb-0">We aim to become a strategic project for the university and a key player in the MENA region's entrepreneurship ecosystem. Some of our offerings include capstone support, pitch deck reviewing, pitch practices, and informative sessions areas surrounding startups.
+
+                Join us in our journey to empower the next generation of impactful entrepreneurs.</p>
+        </div>
+    </div>
+    <div class="container-fluid p-0" id="aboutus">
         <div class="row g-0">
             <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('uae.jpg')"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
@@ -174,23 +158,54 @@
                     Our unique focus is on Impact Entrepreneurship. We emphasize the development of ethical and transparent companies that aim to have a significant, positive impact on society and/or the environment.</p>
             </div>
         </div>
-        <div class="row g-0">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('waterripple.jpg')"></div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Our Vision</h2>
-                <p class="lead mb-0">We aim to become a strategic project for the university and a key player in the MENA region's entrepreneurship ecosystem. Some of our offerings include capstone support, pitch deck reviewing, pitch practices, and informative sessions areas surrounding startups.
-
-                    Join us in our journey to empower the next generation of impactful entrepreneurs.</p>
+    </div>
+</section>
+<section class="testimonials text-center bg-light" id="cc2023">
+    <div class="container" >
+        <h2 class="mb-5">COMING UP: Campus Challenge 2023</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." /> -->
+                    <h3>What</h3>
+                    <p class="font-weight-light mb-0">A bootcamp brought to you
+                        by the ielab, where you
+                        learn to tackle problems
+                        and solve them through
+                        entrepreneurship
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." /> -->
+                    <h3>Why</h3>
+                    <p class="font-weight-light mb-0">Entrepreneurship is one of
+                        the greatest ways to drive
+                        change in the world and in
+                        our community
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <!-- <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." /> -->
+                    <h3>When</h3>
+                    <p class="font-weight-light mb-0">September 22nd, 2023
+                        (Sign ups out on
+                        September 8th, 2023)</p>
+                </div>
             </div>
         </div>
-
     </div>
 </section>
 
 
+
+
 <section class="testimonials1 text-center bg-light">
     <div class="container">
-        <h2 class="mb-5">Support Offered</h2>
+        <h1 class="mb-5">Support Offered</h1>
     </div>
 </section>    
 
@@ -219,13 +234,17 @@
                 <p class="lead mb-0">
                     <br> 
                     Coaching: As a first step, students can sign-up for individual online coaching 
-                    sessions with one of their staff to answer first questions and discuss ideas. <br>
+                    sessions with one of their staff to answer first questions and discuss ideas. <br><br>
                     Bootcamps: In a second step, they could apply to participate in one of the five virtual bootcamps taking place every year. <br>
                     <br> 
                     Programs available in New York (in-person): <br>
-                    Start-up Sprint: Another option would be a participation in their two-weeks start-up sprint that takes place during J-term and right after commencement. <br> 
-                    Summer Launchpad: A 9-weeks accelerator program called the Summer Launchpad for 8-10 teams every year, in-person in New York. <br> 
+                </p>
                 
+                    <ul>
+                    <li>Summer Launchpad: A 9-weeks accelerator program called the Summer Launchpad for 8-10 teams every year, in-person in New York. </li>
+                    <li>Start-up Sprint: Another option would be a participation in their two-weeks start-up sprint that takes place during J-term and right after commencement. </li>
+                    </ul>
+                    <p class="lead mb-0">
                     <a href="https://entrepreneur.nyu.edu/resource/nyu-entrepreneurial-institute/">Learn More</a>
                 </p>
             </div>
@@ -234,15 +253,136 @@
 </section>
 
 
+<!-- team -->
+<section class="testimonials text-center bg-light">
+
+    <div class="container">
+        <h2 class="mb-5">Faculty Advisory Board</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://nyuad.nyu.edu/content/nyuad/en/home/academics/divisions/social-science/faculty/barbara-constance-scheck/jcr:content/bio-info/image.adaptive.m1683197067410/290.jpg" alt="..." />
+                    <h5>Prof. Barbara Scheck</h5>
+                    <p class="font-weight-light mb-0">Director</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://nyuad.nyu.edu/en/academics/divisions/social-science/faculty/jemima-a-frimpong/_jcr_content/bio-info/image.img.jpg" alt="..." />
+                    <h5>Prof. Jemima Frimpong</h5>
+                    <p class="font-weight-light mb-0">Director</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                    <h5>To be announced</h5>
+                    <p class="font-weight-light mb-0">To be announced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+<div class="container">
+    <h2 class="mb-5">Our Team</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                <h5>To be announced</h5>
+                <p class="font-weight-light mb-0">To be announced</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                <h5>To be announced</h5>
+                <p class="font-weight-light mb-0">To be announced</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                <h5>To be announced</h5>
+                <p class="font-weight-light mb-0">To be announced</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+    <div class="container">
+        <h2 class="mb-5">Affiliated Faculty</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                    <h5>To be announced</h5>
+                    <p class="font-weight-light mb-0">To be announced</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                    <h5>To be announced</h5>
+                    <p class="font-weight-light mb-0">To be announced</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="..." />
+                    <h5>To be announced</h5>
+                    <p class="font-weight-light mb-0">To be announced</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- partners and sponsors -->
+    <div class="container">
+        <h2 class="mb-5">Partners and Sponsors</h2>
+        <div class="row align-items-center">
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.nyu.edu/" target="_blank"><img class="img-fluid img-brand d-block mx-auto" src="tempnyu.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.nyu.edu/" target="_blank"><img class="img-fluid img-brand d-block mx-auto" src="tempnyu.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.nyu.edu/" target="_blank"><img class="img-fluid img-brand d-block mx-auto" src="tempnyu.png" alt="" /></a>
+            </div>
+            <div class="col-md-3 col-sm-6 my-3">
+                <a href="https://www.nyu.edu/" target="_blank"><img class="img-fluid img-brand d-block mx-auto" src="tempnyu.png" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- faq (dropdown based) -->
+<section class="testimonials1 text-center bg-light">
+    <div class="container">
+        <h1 class="mb-5">FAQ</h1>
+    
+   
+
+<div class="faq-section">
+
+    <!-- Question 1 -->
+    <div class="faq-question" onclick="toggleAnswer('answer1')">What is the purpose of this website?</div>
+    <div class="faq-answer" id="answer1">This is a placeholder answer for the first question. Replace this text with the actual answer.</div>
+
+    <!-- Question 2 -->
+    <div class="faq-question" onclick="toggleAnswer('answer2')">How can I contact support?</div>
+    <div class="faq-answer" id="answer2">This is a placeholder answer for the second question. Replace this text with the actual answer.</div>
+
+    <!-- Question 3 -->
+    <div class="faq-question" onclick="toggleAnswer('answer3')">Where can I find more information?</div>
+    <div class="faq-answer" id="answer3">This is a placeholder answer for the third question. Replace this text with the actual answer.</div>
+<br><br><br>
+</div>
+</div>
+</section> 
 
 
-
-
-
-
-
-
-<!-- Testimonials-->
 
 <!-- Call to Action-->
 <section class="call-to-action text-white text-center" id="signup">
@@ -261,6 +401,16 @@
 
 
 <script>
+  function toggleAnswer(answerId) {
+        var answer = document.getElementById(answerId);
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+
+
     const scr11 = 'https://script.google.com/macros/s/AKfycbzOUOepm7GEwW9AYmf6M'
     const scr21 = '-xMWgFd3jUo3ACyRS7VHknWJGMQPbEJt2BGj6pzz1Jrddv-/exec'
     const scriptURL1 = scr11 + scr21
