@@ -1,5 +1,3 @@
-const SHEETSON_API_KEY = 'YOUR_SHEETSON_API_KEY';
-
 $(document).ready(function(){
     fetch('https://api.sheetson.com/v2/sheets/startups', {
         withCredentials: true,
