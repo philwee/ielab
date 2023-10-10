@@ -1,11 +1,12 @@
+const SHEETSON_API_KEY = 'YOUR_SHEETSON_API_KEY';
+
 $(document).ready(function(){
     fetch('https://api.sheetson.com/v2/sheets/startups', {
         withCredentials: true,
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer wkU1O06aFm4QkA8qmSHTaJHdN89it5j6oZwz5JGIqwfxO1VNj6oL7drUT-SnAg',
-            'X-Sheetson-Spreadsheet-Id': '1eQ3Xj9I_b4_xCNS-B9dA-QgdgiWp12x_wC1G1gdknG4'
-        }
+            'Authorization': `Bearer ${process.env.REACT_APP_SHEETSON_API_KEY}`,
+            'X-Sheetson-Spreadsheet-Id': process.env.REACT_APP_SHEETSON_SPREADSHEET_ID }
     })
     .then(r => r.json())
     .then(data => {
