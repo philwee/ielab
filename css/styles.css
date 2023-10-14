@@ -2852,16 +2852,16 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-color: #11111;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  /* --bs-btn-hover-color: transparent; */
+  /* --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent; */
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
@@ -10922,14 +10922,17 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .image-container {
-  background-color: white; 
+  background-color: white;
   opacity: 0.7;
-  display: flex; 
-  justify-content: center !important; 
+  display: inline-flex; /* Use inline-flex for automatic sizing */
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  max-width: max-content; /* Set maximum width to match image width */
 }
+
 .image-container img {
-  /* max-width: 100%;  */
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 
